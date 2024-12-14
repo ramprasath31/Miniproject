@@ -1,0 +1,69 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;500&display=swap');
+
+/* Navbar */
+.navbar {
+    width: 100vw; /* Full viewport width */
+    display: flex;
+    align-items: center; /* Center-aligns items vertically */
+    justify-content: space-between; /* Space items evenly across navbar */
+    background-color: #1c1f26; /* Dark background color */
+    padding: 25px 20px; /* Adjust padding for spacing */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Keep navbar above all content */
+    font-family: 'Poppins', sans-serif; /* Set font family */
+    font-weight: 600; /* Bold font for visibility */
+    font-size: 1.2rem; /* Increase font size */
+}
+
+/* Navbar Logo */
+.navbar-logo {
+    margin-left: 20px; /* Adjust logo position on the left */
+}
+
+.logo-image {
+    height: 50px; /* Sets logo height */
+    width: auto; /* Maintains aspect ratio */
+}
+
+/* Navbar Links */
+.navbar-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Align items in a row */
+    gap: 20px; /* Space between links */
+    margin-right: 20px; /* Adjust spacing on the right */
+}
+
+.navbar-links li a {
+    color: white; /* Default text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.1rem; /* Slightly larger font size */
+    padding: 5px 10px; /* Add spacing for clickable area */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transitions */
+    border-radius: 5px; /* Rounded corners for hover background */
+}
+
+.navbar-links li a:hover {
+    color: #4CAF50; /* Change text color to green */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle highlight for better visibility */
+}
+
+/* Reset for body and all elements */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent any horizontal overflow */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dashboard Content (Optional if Navbar overlaps) */
+.dashboard-content {
+    padding-top: 120px; /* Move content below navbar */
+    text-align: center; /* Center-align dashboard content */
+}

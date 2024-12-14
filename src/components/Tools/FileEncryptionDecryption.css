@@ -1,0 +1,161 @@
+/* Importing Google Fonts in CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;500&display=swap');
+
+/* General Body Styles */
+body {
+  font-family: 'Roboto', sans-serif; /* Set default font for the body */
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; /* Light background color for better contrast */
+}
+
+/* Container for the whole page layout */
+.file-encryption-decryption-page {
+  display: flex;
+  padding: 20px;
+  background-color: #ffffff; /* White background for the content */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
+}
+
+/* Style for the OtherTools container */
+.other-tools-container {
+  margin-right: 20px;
+  flex-shrink: 0;
+  width: 250px; /* Set a fixed width or adjust as needed */
+}
+
+/* Main container for file encryption and decryption sections */
+.file-encryption-decryption-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Take up remaining space */
+}
+
+/* Style for each individual section */
+.file-encryption-section,
+.file-decryption-section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h2 {
+  font-family: 'Lora', serif; /* Heading font */
+  color: #333; /* Heading color */
+  margin-bottom: 15px;
+}
+
+/* File input styling */
+input[type="file"] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Textarea and input styling */
+textarea,
+input[type="text"] {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+  font-family: 'Roboto', sans-serif; /* Input font */
+}
+
+textarea:focus,
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Button styling */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Roboto', sans-serif; /* Button font */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Label and checkbox styling */
+label {
+  margin-left: 10px;
+  color: #555;
+  font-size: 14px;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+  .file-encryption-decryption-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .other-tools-container {
+    margin-bottom: 20px;
+  }
+
+  .file-encryption-decryption-container {
+    width: 100%;
+  }
+}
+
+/* Style for the information section */
+.info-section {
+  background-color: #ebf9ee; /* Light green background */
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.info-section h2 {
+  font-family: 'Lora', serif; /* Heading font */
+  color: #000407; /* Primary color for the heading */
+  margin-bottom: 10px;
+}
+
+.info-section p {
+  color: #555; /* Dark gray for the text */
+  font-size: 16px;
+  line-height: 1.5; /* Improved readability */
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: #ddd;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
